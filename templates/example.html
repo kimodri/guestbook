@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            My Page
+        </title>
+    </head>
+    <body>
+        {% if myVar%}
+        <h1>This is my {{myVar}}</h1>
+        {% else %}
+        <h1>No variable has been passed!</h1>
+        {% endif %}
+       <h1>This is my body!</h1> 
+    
+       <p>Click this bad boy!</p>
+        {% for link in links %}
+        <a href = '{{link}}'>{{link}} </a>
+        
+        {% endfor %}
+    
+    
+    </body>
+</html>
